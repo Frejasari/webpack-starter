@@ -1,13 +1,5 @@
-import _ from "lodash";
-import "./style.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App.js";
 
-function component() {
-  let element = document.getElementById("widget");
-
-  element.innerHTML = _.join(["React", "webpack"], " ");
-  element.classList.add("hello");
-
-  return element;
-}
-
-document.body.appendChild(component());
+ReactDOM.render(<App />, document.getElementById("widget"));
